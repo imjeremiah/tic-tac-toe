@@ -68,7 +68,7 @@ while !game.game_over
     else game.current_player = player1.name
   end
 
- if game.turn_count == 9
+ if !game.game_over && game.turn_count == 9
   puts "\n\nCATS GAME :(\n\n#{board}"
   game.game_over = true
  end
